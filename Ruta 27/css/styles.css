@@ -1,0 +1,126 @@
+.navbar {
+  background-color: #12254F;
+}
+
+.navbar .navbar-nav .nav-link {
+  color:#E4125D
+
+}
+.navbar .navbar-nav .nav-link:hover{
+  color: aliceblue;
+}
+
+.parte-principal { 
+  margin-top: 60px;
+  background-color: #12254fc4;
+  padding: 2px 2px;
+  border-radius: 90px;
+}
+
+.parte-principal .tex-presentacion {
+  margin-top: 190px;
+  background-color:#E4125D;
+  height: 185px;
+  border-radius: 10px;
+  color: aliceblue;
+
+}
+
+.parte-principal .tex-presentacion .crear {
+  color: #12254F;
+}
+.parte-principal .tex-presentacion a {
+  background-color: #12254F;
+  text-decoration: none;
+  padding: 8px 8px;
+  color: aliceblue;
+  width: 140px;
+  border-radius: 8px;
+  margin-left: 440px;
+
+}
+  .parte-principal .tex-presentacion a:hover{
+    background-color:#e4125ba9;
+    color: #12254F;
+    text-decoration: solid;
+  }
+  
+
+
+.parte-principal .img-logo {
+  padding-left: 170px;
+  padding-top: 40px;
+}
+section h2 {
+  color: #12254F;
+}
+section .m {
+  color: #E4125D;
+}
+section .empresas {
+  color: #E4125D;
+}
+.carousel-inner{
+  max-height: 39rem;
+}
+
+.pie-pagina {
+  background-color: #12254F;
+  color: aliceblue;
+  margin-top: 50px;
+}
+
+.pie-pagina .pie-pagina-arriba {
+  background-color:#12254f8b;
+}
+@media screen and (max-width: 1400px){
+  .parte-principal .tex-presentacion{
+    height: 225px;
+  }
+  .parte-principal .tex-presentacion a { 
+    margin-left: 410px;
+  }}
+  
+  @media screen and (max-width: 1200px){
+    .parte-principal .tex-presentacion{
+    height: 250px;
+    margin-top: 100px;
+  }
+  .parte-principal .tex-presentacion a { 
+    margin-left: 310px;
+  }}
+    
+@media screen and (max-width: 990px) {
+  .parte-principal .tex-presentacion {
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .parte-principal .tex-presentacion a { 
+    margin-left:auto;}
+
+  .parte-principal .img-logo {
+    height: auto !important;
+    justify-content: center !important;
+      
+  }
+  .parte-principal .img-logo .logo-empresa {
+    min-height: 250px !important;
+    justify-content: center !important;
+    
+  }
+
+  #intro {
+    width: 85% !important;
+  }
+}
+
+  /*------hoja estilos producto-------*/
+
+  .fondo-producto {
+    background-image: url(../assets/sitio\ web\ en\ mantenimiento.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
