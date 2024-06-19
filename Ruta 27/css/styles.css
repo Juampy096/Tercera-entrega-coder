@@ -12,7 +12,6 @@
 
 .parte-principal { 
   margin-top: 60px;
-  background-color: #12254fc4;
   padding: 2px 2px;
   border-radius: 90px;
 }
@@ -40,7 +39,7 @@
 
 }
   .parte-principal .tex-presentacion a:hover{
-    background-color:#e4125ba9;
+    background-color:aliceblue;
     color: #12254F;
     text-decoration: solid;
   }
@@ -51,6 +50,27 @@
   padding-left: 170px;
   padding-top: 40px;
 }
+
+.card-body .card-title {
+  color: #E4125D;
+  font-weight: bolder;
+
+}
+
+.card-body .lead {
+  color: #12254F;
+  font-weight:400;
+}
+
+.card-body i {
+  color: #12254F;
+}
+.card-body .btn {
+  background-color: #12254F;
+}
+
+
+
 section h2 {
   color: #12254F;
 }
@@ -117,10 +137,120 @@ section .empresas {
 
   /*------hoja estilos producto-------*/
 
-  .fondo-producto {
-    background-image: url(../assets/sitio\ web\ en\ mantenimiento.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 600px;
-  }
+
+  .wrapper{
+    position: absolute;
+    top:63%;
+    left:44%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    height:auto;
+}
+.button2{
+    width:120px;
+    height:50px;
+    background: #12254F;
+    color:#fff;
+    font-size: 17px;
+    letter-spacing: 3px;
+    border-radius: 8px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+.button2 span{
+    position: absolute;
+    display: block;
+}
+.button2 span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+.button2 span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #f6e58d);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+.button2 span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #f6e58d);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+.button2 span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #f6e58d);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -70px;
+    }
+    100%{
+        bottom:70px;
+    }
+}
+
+.button2:hover{
+    transition: all .5s;
+    transform: rotate(-3deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
+.button2:hover span{
+    animation-play-state: paused;
+}
